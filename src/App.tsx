@@ -1,12 +1,15 @@
 import {BrowserRouter,Route, Routes} from "react-router-dom"
 import './App.css'
-import React,{ useState , useEffect} from 'react'
-import Header from './header'
 import Home from './home';
-import axios from "axios";
+import Berserk from "./pages/berserk";
+import Vagabond from "./pages/vagabond";
+
 
 function App() {
-  let pages= {"Berserk":<Berserk/>,"Vagabond":<Vagabond/>}
+  const pages: { [key: string]: JSX.Element } = {
+    "Berserk": <Berserk />,
+    "Vagabond": <Vagabond />,
+  };
    var posts = [{
     _id: ('651ef5c208acb22a54779b5f'),
     title: 'A beleza em Berserk',
