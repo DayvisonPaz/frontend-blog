@@ -87,6 +87,7 @@ function App() {
     <Routes>
     <Route path='/'   element={<Home data={{posts}} />} />
     {myroutes}
+    <Route path='/berserk' element={<Berserk></Berserk>} />
     </Routes>
     </BrowserRouter>
     
