@@ -3,7 +3,7 @@ import './App.css'
 import Home from './home';
 import Berserk from "./pages/berserk";
 import Vagabond from "./pages/vagabond";
-import React,{ useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from "axios";
 import Vinland from "./pages/vinland";
 function App() {
