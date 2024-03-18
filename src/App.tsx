@@ -13,7 +13,7 @@ function App() {
     "Vinland": <Vinland />
   };
   
-  const [posts,setPosts] = useState([])
+  const [posts,setPosts] = useState([{"route":String,"post":Number}]);
   useEffect(() => {
     
     
@@ -26,7 +26,7 @@ function App() {
   run()
 }, []);
     
-  const myroutes = posts.map((e)=><Route path={`/${e.route}`} key={e.post}  element={pages[`${e.route}`] } />)
+  const myroutes = posts.map((e)=><Route path={`/${e.route}`} key={e.post as unknown as string}  element={pages[`${e.route}`] } />)
   return (
     <>
     <BrowserRouter>
