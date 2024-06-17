@@ -28,14 +28,7 @@ return(
         </div>
     </nav>
 </header>
-<div className="flex items-center justify-around bg-[#e3dcd6] w-screen h-[25%]">
-    
-    <div className="max-[640px]:hidden">Preocupado com uma única folha,<br/> você não verá a árvore.</div>
-    <div className="max-[640px]:w-[35%] 2xl:w-10% md:w-[20%] sm:w-[25%] lg:w-[15%]  xl:w-[10%] h-2/5 ">
-    <img className="border-8 border-s-white-800" src="https://onedrive.live.com/embed?resid=CCDB940572A31808%2136353&authkey=%21AGGAIZGq1WCgy1U&width=466&height=549" alt="logo" />
-    </div>
-    <div className="max-[640px]:hidden">Preocupado com uma única árvore <br/> você não perceberá toda a floresta.</div>
-</div></>
+</>
 )
 }
 

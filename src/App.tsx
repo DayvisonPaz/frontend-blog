@@ -6,11 +6,18 @@ import Vagabond from "./pages/vagabond";
 import { useState, useEffect } from 'react';
 import axios from "axios";
 import Vinland from "./pages/vinland";
+import Summitofgods from "./pages/sumitofgods";
+import Portfolio from "./pages/portfolio";
+import Projects from "./pages/Projects";
+import Inicial from "./pages/inicial";
 function App() {
   const pages: { [key: string]: JSX.Element } = {
-    "Berserk": <Berserk />,
+    "summitofgods": <Summitofgods />,
     "Vagabond": <Vagabond />,
-    "Vinland": <Vinland />
+    "Vinland": <Vinland />,
+    "Porfolio": <Portfolio />,
+    "Projects": <Projects />,
+    "inicial": <Inicial />
   };
   
   const [posts,setPosts] = useState([{"route":String,"post":Number}]);
@@ -33,7 +40,10 @@ function App() {
     <Routes>
     <Route path='/'   element={<Home data={{posts}} />} />
     {myroutes}
-    <Route path='/berserk' element={<Berserk></Berserk>} />
+    <Route path='/Summitofgods' element={<Summitofgods></Summitofgods>} />
+    <Route path='/inicial' element={<Inicial></Inicial>} />
+    <Route path='/portfolio' element={<Portfolio></Portfolio>} />
+    <Route path='/projects' element={<Projects></Projects>} />
     </Routes>
     </BrowserRouter>
     
